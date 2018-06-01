@@ -157,7 +157,8 @@ def train(num_gpus, rank, group_name, output_directory, epochs, learning_rate,
                      
             iteration += 1
         duration_epoch = time.perf_counter() - start_epoch
-        print( "{:.2f}s/epoch ".format(duration_epoch) 
+        print( "{:.2f}s/epoch ".format(duration_epoch))
+        
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-c', '--config', type=str,
